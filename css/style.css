@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;/*no permitira seleccionar nada*/
+    font-family: 'Lugrasimo';
+}
+@font-face {/*forma correcta de ingresar una fuente*/
+    font-family: Lugrasimo;
+    src: url('../assets/fonts/Lugrasimo-Regular.ttf');
+    /*font-display: swap;/* swap Espera la fuente asignada mientras tanto pone por defecto la del navegador*/ /*Se comenta porque no deja cargar el hover*/
+}
+a{
+    color:#ffffff;
+}
+#nav{
+    /* fixed El elemento fijo se mantiene en la misma posición incluso si se hace scroll en la página. Siempre aparecerá en la misma ubicación en relación con la ventana gráfica.*/
+    z-index: 100;
+    width: 100vw;
+    height: 4em;
+    background-color: #000;
+}
+.enlaces-nav{
+    font-size: 2em;
+    transition: all 1s;
+}
+.enlaces-nav:hover{
+    color:#FF952C;
+    text-decoration: underline;
+}
+.enlaces-container{
+    float: right;
+}
+.lista-nav{
+    display: inline-block;/*pone la lista de forma horizontal*/
+    margin-right: 3em;
+    line-height: 4em;
+}
+
+body {
+    background-image: url('../assets/img/gym.jpeg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+
+#footer{
+    width: 100vw;
+    height: 2em;
+    background-color: #000;
+    color: #FFF;
+    font-size: .7em;
+    line-height: 2;
+    position: relative;
+    bottom: 0;
+}
+
+#footer>p{/*indica que modifica la p que esta dentro de footer*/
+    font-family: 'Lugrasimo';
+    text-align: center;
+}
+#footer>p>a{
+    color: #999;
+    transition: all 1s;
+}
+#footer>p>a:hover{
+    color: #131313;
+    text-decoration:underline;   
+    text-shadow:2px 2px #FF952C;
+}

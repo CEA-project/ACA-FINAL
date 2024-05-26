@@ -1,0 +1,94 @@
+main{
+    height: 100vh;
+    background-color: #C0C0CC;
+}
+#imagen-inicial{
+    background-image: url('../assets/img/gym.jpeg');
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;/*La imagen de fondo permanece fija en su posición en la ventana gráfica, lo que crea un efecto de paralaje en el que el contenido de la página se desplaza sobre la imagen de fondo fija.*/
+    background-size: cover;/*la imagen de fondo se ajustará en tamaño para asegurarse de que cubra completamente el contenedor, manteniendo la relación de aspecto original de la imagen. Esto puede resultar en que parte de la imagen se recorte o que se agregue espacio en blanco alrededor de ella para cubrir todo el área del contenedor.*/
+    position: relative;/*Si no se especifican desplazamientos (top, right, bottom, left), el elemento permanecerá en su posición original, pero aún se puede utilizar z-index para cambiar su orden de apilamiento en relación con otros elementos.*/
+    top:0;
+    z-index: 50;
+}
+.texto-inicio{
+    color: #ffffff;
+    padding: 60px 90px 0 90px;/*top rigth bottom left*/
+}
+.title{
+    font-size: 4em;
+    width: 5em;
+}
+.parrafo-inicio{
+    font-size: 1em;
+    text-align: justify;
+}
+.reserva>button{
+    padding: 20px 30px;
+    font-size: 1.5em;
+    margin: 23px 0 0 90px;
+    background-color: #ccc;
+    border-radius: 10px;
+    border:0;
+    border-bottom: 2px solid #333;
+}
+.reserva>button:hover{
+    cursor: pointer;
+    background-color: #eee;
+    text-shadow: 2px 2px 2px #5CB1CC;
+    box-shadow: 2px 2px 2px #555;   
+}
+.reserva>button:active{
+    background-color: #E9D71E;
+    border: 2px solid #222;
+    text-shadow: 2px 2px 2px #fff;
+    box-shadow: 2px 2px 2px #DDD;   
+}
+.mapa{
+    width: 100vw;
+    height: 100vh;
+    background-color: #070707;
+}
+.figura-mapa{
+    margin: 90px 0 0 90px;
+}
+.letras-mapa{
+    margin-top: 45px;
+    float: right;
+    width: 40%;
+    font-size: 2em;
+}
+.letras-m>a{
+   font-size: .7em;
+   margin: 10px;
+   color:#ffffff;   
+}
+.letras-m>a:hover{
+    color:#ffffff;
+    text-shadow: 2px 2px 2px #5CB1CC;
+    text-decoration: underline;
+}
+ 
+/* Estilos para el botón de la encuesta */
+.encuesta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    margin: 23px 0 0 90px;
+    background-color: #3d3f42;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.encuesta-button:hover {
+    background-color: #0056b3;
+}
+

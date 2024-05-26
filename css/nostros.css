@@ -1,0 +1,36 @@
+#main{
+    height: 100vh;
+}
+.article{
+    text-align: center;
+    padding: 40px;
+}
+h1{
+    color:#ffffff;
+}
+.h2-mision{
+    color: #ffffff;
+}
+.h2-vision{
+    color: #ffffff;
+}
+.p-quienes{
+    text-align: justify;
+    color: white;
+}
+.p-mision{
+    text-align: justify;
+    color: white;
+}
+.p-vision{
+    text-align: justify;
+    color: white;
+}
+.img-quienes{
+    height: 36.3vh;
+    width: 100vw;
+    background-image: url(../assets/img/gym.jpeg);
+    background-size: auto;
+    background-attachment: fixed;
+
+}

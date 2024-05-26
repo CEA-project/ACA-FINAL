@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../assets/img/pesa.icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+
+</head>
+<body>
+    <nav id="nav">
+        <ul class="enlaces-container">
+            <li class="lista-nav"><a class="enlaces-nav" href="./index.html">Inicio</a></li>
+            <li class="lista-nav"><a class="enlaces-nav" href="./nosotros.html"target="_blank">Nosotros</a></li>
+            <li class="lista-nav"><a class="enlaces-nav" href="./Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <div id="form-container">
+            <form id="form" action="">
+                <label for="first-name">Nombres:</label>
+                <input class="inputs" type="text" name="first-name" required>
+                <label for="last-name">Apellidos:</label>
+                <input class="inputs" type="text" name="last-name" required>
+                <label for="email">Email:</label>
+                <input class="inputs" type="email" name="email" required>
+                <label for="Fecha de reservación">Fecha y hora de reservación</label><br>
+                <input class="date-time" type="date" required>
+                <input class="date-time time" type="time" required><br>
+                <label for="textarea">Cuentanos tú inquietud</label>
+                <textarea class="inputs" name="textarea" id="" cols="20" rows="5"></textarea>
+                <input class="inputs boton-enviar" type="submit" value="Reservar">
+            </form>
+        </div> 
+    </main>
+    <footer id="footer">
+        <p>Created to <a class="link-luigi" href="https://mail.google.com" target="_blank">luigi herrera </a>&copy; 2024</p><!--queda mejor crearlo desde JS para que se actualice solo-->
+    </footer>
+</body>
+</html>
