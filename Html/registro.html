@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+
+</head>
+<body>
+    <nav id="nav">
+        <ul class="enlaces-container">
+            <li class="lista-nav"><a class="enlaces-nav" href="./index.html">Inicio</a></li>
+            <li class="lista-nav"><a class="enlaces-nav" href="./nosotros.html"target="_blank">Nosotros</a></li>
+            <li class="lista-nav"><a class="enlaces-nav" href="./Contacto.html">Contacto</a></li>
+            <li class="lista-nav"><a class="enlaces-nav" href="./registro.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <div class="group">
+            <form action="registro.php" method="POST">
+                <h2><em>Formulario de Registro</em></h2>
+                <label for="nombre">Nombre <span><em>(requerido)</em></span></label>
+                <br>
+                <input type="text" name="nombre" class="form-input" required/>
+                <br>
+                <label for="apellido">Apellido <span><em>(requerido)</em></span></label>
+                <br>
+                <input type="text" name="apellido" class="form-input" required/>
+                <br>
+                <label for="email">Email <span><em>(requerido)</em></span></label>
+                <br>
+                <input type="email" name="email" class="form-input" />
+                <center>
+                    <br>
+                    <input class="form-btn" name="submit" type="submit" value="registrar" />                 </center>
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Created to <a class="link-luigi" href="https://mail.google.com" target="_blank">luigi herrera </a>&copy; 2024</p><!--queda mejor crearlo desde JS para que se actualice solo-->
+    </footer>
+</body>
+</html>
